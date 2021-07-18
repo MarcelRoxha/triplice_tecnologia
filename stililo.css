@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: black;
+}
+body#sigin{
+    background: window;
+}
+
+input{
+    display: block; 
+    height: 50px;
+    width: 580px;
+    margin: 10px;
+    border-radius: 16px;
+    font-size: 16pt;
+    padding: 4px; 
+    outline: 0;
+    border: 1px solid #1d0b95;
+
+}
+
+div#corpo-form{ 
+    border-radius: 7px;
+    background-color: activeborder;
+    width: 420px;
+    margin: 150px auto 0px auto;
+    padding: 10px;
+}   
+
+
+
+div#tela_login_lado_esquerdo{
+    width: 366px;
+    margin: 40%;
+    margin-left: 1%;
+
+}
+
+
+img#imagem_texto_entrar_sigin{ 
+    padding: 10px;
+
+}
+
+
+div#tela_login_lado_direito{
+    margin: 30%;
+    margin-left: -7%; 
+    width: 600px;
+    padding: 10px;
+    text-align:  center;
+    display: block;    
+
+    box-shadow: 10px 10px 10px #1d0b95;
+}
+
+input#botaologar{
+    background: #1d0b95;
+    color: window;
+    width: 590px;
+}
+
+#botaologar:hover{
+    background: #2100ff;
+    cursor: pointer;
+
+}
