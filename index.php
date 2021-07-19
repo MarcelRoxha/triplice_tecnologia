@@ -9,11 +9,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-        if(isset($_SESSION['msgErro'])){
-            $msg = $_SESSION['msgErro'];            
-            echo $msg;
-        }
-        unset($_SESSION['msgErro']);
+if (isset($_SESSION['msgErro'])) {
+    $msg = $_SESSION['msgErro'];
+    echo $msg;
+}
+unset($_SESSION['msgErro']);
 ?>
 
 
@@ -21,6 +21,7 @@ and open the template in the editor.
     <head lang="pt-br">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="./imagens/icon_logo_v1.png">
         <link rel="stylesheet" href="./stililo.css">
         <title>Triplice Tecnologia</title>
     </head>
@@ -49,7 +50,7 @@ and open the template in the editor.
                 </form>
             </div>  
         </div>
-   
-        
+
+
     </body>
 </html>

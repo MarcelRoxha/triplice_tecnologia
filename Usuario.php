@@ -2,7 +2,10 @@
 
 
 class Usuario {
-
+    
+    
+    //Methodo para logar o usuario
+    
     public function login($email, $senha) {
 
         try {
@@ -20,6 +23,8 @@ class Usuario {
                 if ($dados['userType'] == "admin") {
                     echo "Bem vindo mestre " . $dados['nome'];
                     $_SESSION['username'] = $dados['nome'];
+                   
+                    header("location: adminPage.php");
                     unset($_POST['email']);
                     unset($_POST['senha']);
                 } elseif ($dados['userType'] == "user") {
