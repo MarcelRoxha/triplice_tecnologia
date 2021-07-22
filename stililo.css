@@ -9,7 +9,7 @@
 /*-------------------------------- Cor fundo tela login------------------------- **/
 
 body{
-   
+
 }
 /*-------------------------------- Cor fundo tela login------------------------- **/
 
@@ -90,27 +90,27 @@ input#botaologar{
 /*-------------- Custom imagens icons ------------ **/
 
 
-    
-    div#cabeçalho_adminPage{
-        flex-direction: row;
-        justify-content: space-around;
-    }
+
+div#cabeçalho_adminPage{
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 
 
 div#imgboostrap{
     margin: 2%;
-    
+
 }
 
 
 
-nav{
+nav#logo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+
+
 }
 
 nav ul{
@@ -125,21 +125,68 @@ nav ul{
 nav ul li{
     text-align: center;
     width: 100%;
-    
+
 }
 
 @media screen and (min-width: 768px){
-    
-    nav{
+
+    nav#logo{
         flex-direction: row;
         justify-content: space-around;
-        
+
     }
-    
-     nav ul{
+
+    nav#logo ul{
         flex-direction: row;
         justify-content: space-around;
-       
+
     }
 }
 
+/*-------------- Custom menu ------------ **/
+
+input[type="checkbox"]{
+    display: none;
+    cursor: pointer;
+}
+
+nav#menu{
+    background: #1d0b95;
+    width: 350px;
+    height: 100%;
+    left: -360px;
+    font-family:cursive;        
+    position: relative;
+    transition: all 0.5s;
+}
+
+a#itensmenu{
+    text-decoration: none;
+    color: window;
+    padding: 20px 5px;
+    display: block; 
+}
+
+a#itensmenu:hover{
+    background: #2100ff;
+}
+
+input[type="checkbox"]:checked ~ nav{
+
+    transform: translateX(360px);
+
+}
+
+ul#ulmenu{
+    background: #1d0b95;
+    top: 70px;
+    position: absolute;
+
+}
+
+label{
+    position: absolute;
+    padding: 15px;
+    z-index: 1;
+
+}
