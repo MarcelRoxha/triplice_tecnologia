@@ -15,8 +15,9 @@ h1, h2, h3{
 
 
 p{
-    font-size: 72px;
+    font-size: 24px;
     text-align: center;
+    font-family: Poppins;
   
 }
 p#letreiro::after{
@@ -176,6 +177,33 @@ opacity: 1;
 opacity: 0;
     }
 }
+
+div#titulo_solucoes_web h1{
+    font-size: 72px;
+    color: blue;
+    display: block;
+    margin-top: -32.1%;    
+}
+
+div#titulo_solucoes_web{
+    
+   height: 500px;
+   align-items: center;   
+}
+div#titulo_solucoes_web p{
+     margin-top: -1%;    
+}
+
+section#imagem_logo_serv_manutencao img{
+        
+        margin-left: 37%;    
+}
+
+section#imagem_logo_serv_manutencao h1{
+    margin-top: -35.1%;
+  
+}
+
 
 footer{
    margin-bottom: 0%;
