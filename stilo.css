@@ -51,10 +51,6 @@ nav{
     flex-direction: column;
     align-items: center;    
     background: white;
-    
-
-    
-
 }
 
 nav ul{
@@ -63,16 +59,19 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    
-    
-    
+    width: 100%; 
 }
+nav.azul{
+    color: black; 
+   
+}
+
+
 
 nav ul li{
    text-align: center;
    width: 100%;
- 
+ background: white;
    
 }
 
@@ -84,6 +83,10 @@ nav ul li a{
   width: 100%;
   text-decoration: none;
   color: black;
+  
+  
+  
+  
 }
 
 
@@ -93,6 +96,7 @@ nav ul li a{
     nav{
         flex-direction: row;
         justify-content: space-around;
+        background: white;
     }
     
     nav ul {
@@ -181,8 +185,8 @@ p#manutencao{
     margin-top: -35%;
     text-align: center;
     font-size: 206px;
-    animation: faderBemVindo 1s 1s both;
-    color: white;
+    animation: faderBemVindo 1s 0s both;
+    color: white;   
 }
 
 #text-block-bem-vinddo img{    
@@ -191,12 +195,20 @@ p#manutencao{
 
 }
 
+h1.tiratitulo{    
+    margin-top: -23%;
+    font-size: 206px;
+    text-align: center;    
+    color: white;  
+}
+
 
 .letreiroTriplice{  
     margin-top: -23%;
     font-size: 206px;
-    text-align: center;
-   animation: faderTriplice 3.3s 2s both;
+    text-align: center; 
+    
+    animation: faderTriplice 10s 0s normal;
     color: white;
     
 }
@@ -216,6 +228,15 @@ opacity: 0;
     }
     to{
 opacity: 1;
+    }
+}
+
+@keyframes faderBemVindoEtriplice{
+    from{
+opacity: 1;
+    }
+    to{
+opacity: 0;
     }
 }
 

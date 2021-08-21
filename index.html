@@ -8,11 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@300;600&family=Sarala&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stilo.css">
+
+<link rel="stylesheet" href="./stilo.css">
+<script  src="https://code.jquery.com/jquery-3.6.0.js"></script>    
+<script type="text/javascript">
+    $(window).on('scroll', function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('azul');
+        }else{
+            $('nav').removeClass('azul');
+        }
+    })
+
+</script>
+
     <title>Tríplice</title>
 </head>
 <body>   
-    <header>
+
+    <section>
+<header>
         <nav>                    
             <div>
                 <a href="index.html">
@@ -28,17 +43,38 @@
                 </ul>
         </nav>
 </header> 
+
+    </section>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('h1').addClass('letreiroatriplice');
+            }else{
+                $('nav').removeClass('azul');
+            }
+        })
+    
+    </script>
+    
+<div class="titulo_index" >
+                    
+    <div id="text-block-bem-vinddo">             
+        <img src="./imagens/IMG_20210820_010511.jpg" alt=""> 
+        <h1 class="letreirobemvindo"><string>BEM VINDO</string></h1>
+        <h1 class="letreiroTriplice"><string>A TRÍPLICE</string></h1>
+    </div> 
+  </div>
+
        <main>
         <section>    
-            <div class="titulo_index" >
-                    
-                <div id="text-block-bem-vinddo">             
-                    <img src="./imagens/IMG_20210820_010511.jpg" alt=""> 
-                    <h1 class="letreirobemvindo"><string>BEM VINDO</string></h1>
-                    <h1 class="letreiroTriplice"><string>A TRÍPLICE</string></h1>
-                </div> 
-              </div>
-        
+            
            </section>
               
             <section id="servico_web">
