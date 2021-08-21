@@ -116,76 +116,11 @@ nav ul li a{
 }
 
 
-
-div.containerappintegrados{
-        margin-left: 2%;
-   
-}
-
-
-
-
-
-.card{
-    max-width: 666px;
-    margin-top: -30%;
-    margin-left: 47%;
-    border: 1.2px solid black;
-    border-radius: 5%;
-    padding: 10px;
-    background:  rgb(255, 205, 204);
-    
-    
-}
-
-p#solucoesweb{
-    font-size: 18px;
-    text-align: center;
-    padding: 7px;
-  
-}
-
-div.containerappmobile img{
-     margin-top: 10%;
-        margin-left: 60%;
-}
-
-p#solucoesmobile{
-    font-size: 18px;
-}
-
-
-.containerappmobile{
-    margin-top: 0.5%;
-}
-.cards_app_mobile{
-    margin-left: -80%;
-    margin-top: 25%;
-    
-}
-
-.card.card--2{
-    box-shadow: -10px 10px 15px 5px rgb(41 , 119, 201);
-}
-
-.card.card--3{
-    margin-top: -22%;
-    box-shadow: -10px 10px 15px 5px rgb(41 , 119, 201);
-}
-
-p#manutencao{
-    font-size: 18px;
-}
-.containermanutencao{
-    margin-top: 15%;
-    margin-left: 2%;
-}
-
 .letreirobemvindo{   
     margin-top: -35%;
     text-align: center;
     font-size: 206px;
-    animation: faderBemVindo 1s 0s both;
+    animation: faderBemVindo 3.3s 0s both;
     color: white;   
 }
 
@@ -206,9 +141,8 @@ h1.tiratitulo{
 .letreiroTriplice{  
     margin-top: -23%;
     font-size: 206px;
-    text-align: center; 
-    
-    animation: faderTriplice 10s 0s normal;
+    text-align: center;     
+    animation: faderTriplice 6s 0s normal;
     color: white;
     
 }
@@ -223,12 +157,15 @@ opacity: 0;
 }
 
 @keyframes faderTriplice{
-    from{
+    0%{
 opacity: 0;
     }
-    to{
-opacity: 1;
+    50%{
+opacity: 0.01;
     }
+    100%{
+                opacity: 1;
+            }
 }
 
 @keyframes faderBemVindoEtriplice{
