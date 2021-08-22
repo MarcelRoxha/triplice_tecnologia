@@ -5,7 +5,7 @@
    
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5{
     margin: 0;
     font-family: Poppins;
     font-size: 30px;
@@ -20,13 +20,8 @@ p{
     font-family: Poppins;
   
 }
-p#letreiro::after{
-    content: '|';
-    margin-left: 5px;
-    opacity: 1;
-    animation: pisca 0.6s infinite ;
 
-}
+
 /**------------------Formatação Cabeçalho ----------------------*/
 
 body{
@@ -45,6 +40,7 @@ header{
 
 
 
+
 /**------------------Formatação NAV ----------------------*/
 
 nav{
@@ -54,6 +50,8 @@ nav{
     background: white;
 }
 
+
+
 nav ul{
     list-style: none;
     padding: 0;
@@ -62,12 +60,6 @@ nav ul{
     align-items: center;
     width: 100%; 
 }
-nav.azul{
-    color: black; 
-   
-}
-
-
 
 nav ul li{
    text-align: center;
@@ -84,10 +76,8 @@ nav ul li a{
   width: 100%;
   text-decoration: none;
   color: black;
-  
-  
-  
-  
+  border-bottom: 3px solid transparent;
+  transition: 768ms;
 }
 
 
@@ -182,7 +172,7 @@ div#titulo_solucoes_web h1{
     font-size: 72px;
     color: blue;
     display: block;
-    margin-top: -32.1%;    
+    margin-top: -35.1%;    
 }
 
 div#titulo_solucoes_web{
@@ -198,20 +188,159 @@ section#imagem_logo_serv_manutencao img{
         
         margin-left: 37%;    
 }
+.cards{ 
+   margin: 0 auto;
+   max-width: 900px;
+}
+.card{
+    margin-top: 25%;
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.card.card--1{    
+    margin-top: 40%;
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid rgb(80, 74, 74);    
+}
+.card.card--1 img{
+     display: block;
+     margin: 0 auto;
+     transition: 768ms;
+}
+
+div.card.card--1 img:hover{
+    width: 520px;
+   
+ }
+ div.card.card--2 img:hover{
+    width: 750px;
+    
+ }
+ div.card.card--3 img:hover{
+    width: 520px;
+    
+ }
+.card.card--2 img{
+     display: block;
+     margin: 0 auto;
+     margin-top: -100px;
+     margin-bottom: -100px;
+     transition: 768ms;
+}
+.card.card--3 img{
+    display: block;
+     margin: 0 auto;
+     margin-top: -25px;
+     margin-bottom: -25px;
+     transition: 768ms;
+}
+
+
+.card h1{
+    font-size: 72px;
+    color: blue;
+}
+
+.card button{
+    width: 350px;
+    border-radius: 15px;
+    height: 150px;
+    background: rgb(41, 109, 201);
+    color: black;
+    display: block;
+    margin: 0 auto;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    font-size: 24px;
+    transition: 1000ms;
+    box-shadow: 12px 12px 15px 4px rgb(41, 109, 201);
+    font-family: Poppins;
+}
+nav a:hover{
+    border-color: rgb(41, 109, 201);
+}
+
+button:hover{
+    width: 370px;
+    height: 160px;
+    cursor: pointer;
+    font-size: 28px;    
+    box-shadow: 18px 18px 20px 8px rgb(41, 109, 201);
+    
+}
+
+.card.card--2{    
+    margin-top: 25%;
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid black;
+    
+}
+.card.card--3{
+    
+    margin-top: 25%;
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid black;
+    
+}
+
+
+
 
 section#imagem_logo_serv_manutencao h1{
     margin-top: -35.1%;
   
 }
+div.box-servico_web{
+    margin-top: 15%;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid black
+}
+div.box-dev_mobile{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid black
+}
+div.box-serv_manutencao{
+     margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid black
+}
 
 
 footer{
-   margin-bottom: 0%;
-    color: yellow;
+   margin-top: 12%;
+   
+   background: rgb(41, 109, 201);
+    
 }
+
+footer p{
+    margin-top: 20px;
+    padding: 25px;
+    color: white;
+    font-size: 14px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    
+ }
 
 #servico_web{
 margin-top: 10%;
+}
+
+section#imagem_logo_dev_mobile img{
+    
+    margin-left: -9%;
 }
 
 
