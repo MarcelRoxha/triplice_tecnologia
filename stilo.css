@@ -25,6 +25,7 @@ p{
 
 body{
     font-family: Yomogi, cursive;
+    background: linen;
     
     
 }
@@ -43,6 +44,7 @@ header{
 /**------------------Formatação NAV ----------------------*/
 
 nav{
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -63,7 +65,7 @@ nav ul{
 nav ul li{
    text-align: center;
    width: 100%;   
-   padding: 12px;
+   padding: 5px;
    
 }
 
@@ -86,9 +88,9 @@ nav.azul img{
 }
 
 nav img{
+    margin-top: 5%;
     transition: 500ms;
 }
-
 
 
 
@@ -116,7 +118,11 @@ nav img{
     }
 }
 
+nav a:hover{
+    border-color: rgb(41, 109, 201);
+}
 
+/**------------------Formatação Letreiro ----------------------*/
 
 .letreirobemvindo{   
     margin-top: -35%;
@@ -133,8 +139,7 @@ nav img{
 }
 
 h1.tiratitulo{    
-    margin-top: -23%;
-    font-size: 206px;
+    margin-top: -23%;    
     text-align: center;    
     color: white;  
 }
@@ -144,7 +149,7 @@ h1.tiratitulo{
     margin-top: -23%;
     font-size: 206px;
     text-align: center;     
-    animation: faderTriplice 6s 0s normal;
+    animation: faderTriplice 6s 0s none;
     color: white;
     
 }
@@ -179,161 +184,113 @@ opacity: 0;
     }
 }
 
-div#titulo_solucoes_web h1{
-    font-size: 72px;
-    color: blue;
-    display: block;
-    margin-top: -35.1%;    
-}
 
-div#titulo_solucoes_web{
-    
-   height: 500px;
-   align-items: center;   
-}
-div#titulo_solucoes_web p{
-     margin-top: -1%;    
-}
 
-section#imagem_logo_serv_manutencao img{
-        
-        margin-left: 37%;    
-}
+/*------------------Formatação geral Cards ----------------------*/
+
 .cards{ 
-   margin: 0 auto;
-   max-width: 900px;
-}
-.card{
-    margin-top: 25%;
-    border-radius: 10px;
-    padding: 30px;
-    border: 2px solid black;
-}
-
-.card.card--1{    
-    margin-top: 40%;
-    border-radius: 10px;
-    padding: 30px;
-    border: 2px solid rgb(80, 74, 74);    
-}
-.card.card--1 img{
-     display: block;
-     margin: 0 auto;
-     transition: 768ms;
-}
-
-div.card.card--1 img:hover{
-    width: 520px;
-   
- }
- div.card.card--2 img:hover{
-    width: 750px;
+    position: static;   
+    width: 100%;
+    display: inline-block;
     
  }
- div.card.card--3 img:hover{
-    width: 520px;
-    
+ .card{
+  
+     border-radius: 10px;   
  }
-.card.card--2 img{
-     display: block;
-     margin: 0 auto;
-     margin-top: -100px;
-     margin-bottom: -100px;
-     transition: 768ms;
-}
-.card.card--3 img{
-    display: block;
-     margin: 0 auto;
-     margin-top: -25px;
-     margin-bottom: -25px;
-     transition: 768ms;
-}
-
-
-.card h1{
-    font-size: 72px;
-    color: blue;
-}
-
-.card button{
-    width: 350px;
-    border-radius: 15px;
-    height: 150px;
-    background: rgb(41, 109, 201);
+ .card h1{
+    font-size: 27px;
     color: black;
+}
+
+.card p{
+    font-size: 17px;
+    color: rgb(57, 64, 82);
+}
+
+.card button{   
     display: block;
-    margin: 0 auto;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    font-size: 24px;
+    border: 0;     
+    color: blue;   
+    margin: 0 auto;       
+    font-size: 18px;
     transition: 1000ms;
-    box-shadow: 12px 12px 15px 4px rgb(41, 109, 201);
+    background: transparent; 
     font-family: Poppins;
+    padding: 5px;
+    
 }
-nav a:hover{
-    border-color: rgb(41, 109, 201);
-}
+
+/*------------------Formatação Geral Button Index ----------------------*/
 
 button:hover{
-    width: 370px;
-    height: 160px;
+    
     cursor: pointer;
-    font-size: 28px;    
-    box-shadow: 18px 18px 20px 8px rgb(41, 109, 201);
-    
-}
-
-.card.card--2{    
-    margin-top: 25%;
+    font-size: 18px;
+    box-shadow: 3px 10px 40px 2px rgb(57, 64, 82);
     border-radius: 10px;
-    padding: 30px;
-    border: 2px solid black;
     
-}
-.card.card--3{
     
-    margin-top: 25%;
-    border-radius: 10px;
-    padding: 30px;
-    border: 2px solid black;
-    
+
+
 }
 
+/**------------------Formatação Index soluções web ----------------------*/
 
 
-
-section#imagem_logo_serv_manutencao h1{
-    margin-top: -35.1%;
-  
-}
-div.box-servico_web{
+.card.card--1{       
     margin-top: 15%;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid black
-}
-div.box-dev_mobile{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid black
-}
-div.box-serv_manutencao{
-     margin-top: 25px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid black
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    margin-left: 10%;
+   
+        
 }
 
+.card.card--1 img{
+    display: block;
+    margin: 0 auto;
+    transition: 768ms;
+}
+ 
+    /**------------------Formatação Index soluções Mobile ----------------------*/
+
+ .card.card--2 img{
+    display: block;
+    margin: 0 auto;    
+    transition: 768ms;
+}
+.card.card--2{    
+    margin-top: 15%;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+    margin-right: 10%;
+}
+
+
+ /**------------------Formatação Index manutenção periféricos ----------------------*/
+
+.card.card--3 img{
+     display: block;
+     margin: 0 auto;    
+     transition: 768ms;
+     padding: -27%;;
+}
+.card.card--3{    
+    margin-top: 0%;
+    border-radius: 10px;
+    padding: 15px;
+       
+}
+
+
+/**------------------Formatação Index footer ----------------------*/
 
 footer{
-   margin-top: 12%;
-   
-   background: rgb(41, 109, 201);
-    
+   margin-top: 5%;   
+   background: rgb(41, 109, 201);    
 }
 
 footer p{
@@ -345,14 +302,6 @@ footer p{
     
  }
 
-#servico_web{
-margin-top: 10%;
-}
-
-section#imagem_logo_dev_mobile img{
-    
-    margin-left: -9%;
-}
 
 
 
