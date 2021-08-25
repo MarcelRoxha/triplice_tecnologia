@@ -25,9 +25,24 @@ p{
 
 body{
     font-family: Yomogi, cursive;
-    background: linen;
     
+}
+
+.gradient{
     
+  /*  background: linear-gradient(70deg, #bef202, #88c425, #519448);
+   azul jeans -  background: linear-gradient(70deg,rgb(41, 109, 201), #1c264a, #1e6075, rgb(57, 64, 82));
+  verde natura - background: linear-gradient(70deg,#c8df9a, #aee08e, #95caa0, #6abdab, #329b96);
+ sem uniforme - background: linear-gradient(70deg,rgb(114, 132, 158), #6f758a, #688f9b, rgb(123, 161, 255));
+ azul legal - background: linear-gradient(180deg,#265a6a, #138098, #82b6c7,  #a8b484);
+   background: linear-gradient(70deg, #00dffc, #00b4cc, #008c9e, #005f6b, #343838);**/
+   
+
+   background: linear-gradient(45deg,#e9e9e9ce, #cccccc, #faebeb);
+ 
+
+  
+  
 }
 
 header{
@@ -195,8 +210,9 @@ opacity: 0;
     
  }
  .card{
-  
-     border-radius: 10px;   
+     
+     border-radius: 10px; 
+       
  }
  .card h1{
     font-size: 27px;
@@ -206,6 +222,7 @@ opacity: 0;
 .card p{
     font-size: 17px;
     color: rgb(57, 64, 82);
+    
 }
 
 .card button{   
@@ -244,6 +261,7 @@ button:hover{
     padding: 10px;
     float: left;
     margin-left: 10%;
+    
    
         
 }
@@ -279,23 +297,25 @@ button:hover{
      padding: -27%;;
 }
 .card.card--3{    
+    width: 500px;
     margin-top: 0%;
     border-radius: 10px;
     padding: 15px;
+    margin: 0 auto;
        
 }
-
 
 /**------------------Formatação Index footer ----------------------*/
 
 footer{
    margin-top: 5%;   
-   background: rgb(41, 109, 201);    
+   background: rgb(41, 109, 201); 
+   padding: 25px;   
 }
 
 footer p{
-    margin-top: 20px;
-    padding: 25px;
+        
+    
     color: white;
     font-size: 14px;
     font-family:'Arial Narrow Bold', sans-serif;
