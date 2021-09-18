@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Poppins:wght@300;600&family=Sarala&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <link rel="stylesheet" href="./stilo.css">
 <script  src="https://code.jquery.com/jquery-3.6.0.js"></script>    
@@ -23,7 +24,7 @@
 
     <title>Tríplice</title>
 </head>
-<body>   
+<body class="gradient">   
     <section>
         <header>
                 <nav>                    
@@ -63,8 +64,8 @@
 <main>
     <div class="container">
             <div class="cards">
-                <div class="card card--1">
-                    <img src="./imagens/monitor.png" alt="" width="500">
+                <div class="card card--1" data-aos="fade-right">
+                    <img src="./imagens/monitor.png" alt="" width="150">
                     <strong><h1>SOLUÇÕES WEB</h1></strong>
                     <p><strong>
                         A Tríplice oferece soluções Web inovadoras </br> desenvolvidas
@@ -72,31 +73,43 @@
                     </strong>                         
                     </p>
                     <button><strong>EXPERIMENTE</strong> </button>
-                </div>
-                <div class="card card--2">
-                    <img src="./imagens/Celular.png" alt="" width="700">
-                    <strong><h1>APLICATIVOS MOBILE</h1></strong>
-                    <p><strong>
-                        Apps intuitivos com recursos atualizados, manuseabilidade</br> eficiente
-                        para proporcionar o melhor do conforto! 
+                </div>           
+
+
+
+
+            <div class="card card--2" data-aos="fade-left">
+                <img src="./imagens/notebook.png" alt="" width="150">
+                <strong><h1>MANUTENÇÃO DE PERIFÉRICOS</h1></strong>
+                <p><strong>
+                    Deu ruim no celular, notebook ou computador?</br> pode ficar calmo
+                    que a Trplice te ajuda nisso
                     </strong>                                 
-                    </p>
-                    <button><strong>EXPLORE</strong> </button>
-                </div>
-                <div class="card card--3">
-                    <img src="./imagens/notebook.png" alt="" width="500">
-                    <strong><h1>MANUTENÇÃO DE PERIFÉRICOS</h1></strong>
-                    <p><strong>
-                        Deu ruim no celular, notebook ou computador?</br> pode ter calma
-                        a Trplice te ajuda nisso!
-                        </strong>                                 
-                    </p>
-                    <button><strong>VENHA CONHECER</strong> </button>
-                </div>
+                </p>
+                <button><strong>VENHA CONHECER</strong> </button>
+            </div>               
             </div>
+            <div class="card card--3" data-aos="fade-up">
+                <img src="./imagens/Celular.png" alt="" width="200">
+                <strong><h1>APLICATIVOS MOBILE</h1></strong>
+                <p><strong>
+                    Apps intuitivos com recursos atualizados, manuseabilidade</br> eficiente
+                    para proporcionar o melhor do conforto. 
+                </strong>                                 
+                </p>
+                <button><strong>EXPLORE</strong> </button>
+            </div>
+           
     </div>
 
 </main>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 500,
+    }     
+    );
+  </script>
 
     <footer>
         <p>©Copyright2021 todos direitos reservados</p>

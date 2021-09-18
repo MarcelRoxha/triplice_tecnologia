@@ -1,359 +1,329 @@
 /**------------------Formatação em Geral ----------------------*/
 *{
-   margin: 0;
-   padding: 0;
-   
-}
-
-h1, h2, h3, h4, h5{
     margin: 0;
-    font-family: Poppins;
-    font-size: 30px;
-    text-align: center;
-    }
-
-
-
-p{
-    font-size: 24px;
-    text-align: center;
-    font-family: Poppins;  
-}
-
-
-/**------------------Formatação Cabeçalho ----------------------*/
-
-body{
-    font-family: Yomogi, cursive;
-    
-    
-}
-
-header{
-    margin-top: 0;
-    position: fixed;
-    width: 100%;
-    
-  
-}
-
-
-
-
-/**------------------Formatação NAV ----------------------*/
-
-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    background: white;
-}
-
-
-
-nav ul{
-    list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; 
-}
-
-nav ul li{
-   text-align: center;
-   width: 100%;   
-   padding: 12px;
-   
-}
-
-
-nav ul li a{
-  display: inline-block;
-  padding: 0px;
-  font-family: Poppins;
-  font-size: 14px;  
-  width: 100%;
-  text-decoration: none;
-  color: black;
-  border-bottom: 3px solid transparent;
-  transition: 768ms;
-}
-
-nav.azul img{
-    width: 73px;    
-    
-}
-
-nav img{
-    transition: 500ms;
-}
-
-
-
-
-@media screen and (min-width: 768px){
-
-    nav{
-        flex-direction: row;
-        justify-content: space-around;
-        background: white;
-    }
-    
-    nav ul {
-        flex-direction: row;
-        width: 70%;
-
-    }
-
-}
-
-@keyframes pisca{
-    100%{
-       opacity: 1;
-    }50%{
-        opacity: 0;
-    }
-}
-
-
-
-.letreirobemvindo{   
-    margin-top: -35%;
-    text-align: center;
-    font-size: 206px;
-    animation: faderBemVindo 3.3s 0s both;
-    color: white;   
-}
-
-#text-block-bem-vinddo img{    
-    width: 100%;
-    margin-top: 8%;
-
-}
-
-h1.tiratitulo{    
-    margin-top: -23%;
-    font-size: 206px;
-    text-align: center;    
-    color: white;  
-}
-
-
-.letreiroTriplice{  
-    margin-top: -23%;
-    font-size: 206px;
-    text-align: center;     
-    animation: faderTriplice 6s 0s normal;
-    color: white;
-    
-}
-
-@keyframes faderBemVindo{
-    from{
-opacity: 1;
-    }
-    to{
-opacity: 0;
-    }
-}
-
-@keyframes faderTriplice{
-    0%{
-opacity: 0;
-    }
-    50%{
-opacity: 0.01;
-    }
-    100%{
-                opacity: 1;
-            }
-}
-
-@keyframes faderBemVindoEtriplice{
-    from{
-opacity: 1;
-    }
-    to{
-opacity: 0;
-    }
-}
-
-div#titulo_solucoes_web h1{
-    font-size: 72px;
-    color: blue;
-    display: block;
-    margin-top: -35.1%;    
-}
-
-div#titulo_solucoes_web{
-    
-   height: 500px;
-   align-items: center;   
-}
-div#titulo_solucoes_web p{
-     margin-top: -1%;    
-}
-
-section#imagem_logo_serv_manutencao img{
-        
-        margin-left: 37%;    
-}
-.cards{ 
-   margin: 0 auto;
-   max-width: 900px;
-}
-.card{
-    margin-top: 25%;
-    border-radius: 10px;
-    padding: 30px;
-    border: 2px solid black;
-}
-
-.card.card--1{    
-    margin-top: 40%;
-    border-radius: 10px;
-    padding: 30px;
-    border: 2px solid rgb(80, 74, 74);    
-}
-.card.card--1 img{
-     display: block;
-     margin: 0 auto;
-     transition: 768ms;
-}
-
-div.card.card--1 img:hover{
-    width: 520px;
-   
- }
- div.card.card--2 img:hover{
-    width: 750px;
     
  }
- div.card.card--3 img:hover{
-    width: 520px;
-    
+ 
+ h1, h2, h3, h4, h5{
+     margin: 0;
+     font-family: Poppins;
+     font-size: 30px;
+     text-align: center;
+     }
+ 
+ 
+ 
+ p{
+     font-size: 24px;
+     text-align: center;
+     font-family: Poppins;  
  }
-.card.card--2 img{
-     display: block;
-     margin: 0 auto;
-     margin-top: -100px;
-     margin-bottom: -100px;
-     transition: 768ms;
-}
-.card.card--3 img{
-    display: block;
-     margin: 0 auto;
-     margin-top: -25px;
-     margin-bottom: -25px;
-     transition: 768ms;
-}
-
-
-.card h1{
-    font-size: 72px;
-    color: blue;
-}
-
-.card button{
-    width: 350px;
-    border-radius: 15px;
-    height: 150px;
-    background: rgb(41, 109, 201);
-    color: black;
-    display: block;
-    margin: 0 auto;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    font-size: 24px;
-    transition: 1000ms;
-    box-shadow: 12px 12px 15px 4px rgb(41, 109, 201);
-    font-family: Poppins;
-}
-nav a:hover{
-    border-color: rgb(41, 109, 201);
-}
-
-button:hover{
-    width: 370px;
-    height: 160px;
-    cursor: pointer;
-    font-size: 28px;    
-    box-shadow: 18px 18px 20px 8px rgb(41, 109, 201);
+ 
+ 
+ /**------------------Formatação Cabeçalho ----------------------*/
+ 
+ body{
+     font-family: Yomogi, cursive;
+     
+ }
+ 
+ .gradient{
+     
+   /*  background: linear-gradient(70deg, #bef202, #88c425, #519448);
+    azul jeans -  background: linear-gradient(70deg,rgb(41, 109, 201), #1c264a, #1e6075, rgb(57, 64, 82));
+   verde natura - background: linear-gradient(70deg,#c8df9a, #aee08e, #95caa0, #6abdab, #329b96);
+  sem uniforme - background: linear-gradient(70deg,rgb(114, 132, 158), #6f758a, #688f9b, rgb(123, 161, 255));
+  azul legal - background: linear-gradient(180deg,#265a6a, #138098, #82b6c7,  #a8b484);
+    background: linear-gradient(70deg, #00dffc, #00b4cc, #008c9e, #005f6b, #343838);**/
     
-}
-
-.card.card--2{    
-    margin-top: 25%;
-    border-radius: 10px;
-    padding: 30px;
-    border: 2px solid black;
-    
-}
-.card.card--3{
-    
-    margin-top: 25%;
-    border-radius: 10px;
-    padding: 30px;
-    border: 2px solid black;
-    
-}
-
-
-
-
-section#imagem_logo_serv_manutencao h1{
-    margin-top: -35.1%;
+ 
+    background: linear-gradient(45deg,#e9e9e9ce, #cccccc, #faebeb);
   
-}
-div.box-servico_web{
-    margin-top: 15%;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid black
-}
-div.box-dev_mobile{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid black
-}
-div.box-serv_manutencao{
-     margin-top: 25px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid black
-}
-
-
-footer{
-   margin-top: 12%;
+ 
    
-   background: rgb(41, 109, 201);
-    
-}
-
-footer p{
-    margin-top: 20px;
-    padding: 25px;
-    color: white;
-    font-size: 14px;
-    font-family:'Arial Narrow Bold', sans-serif;
+   
+ }
+ 
+ header{
+     margin-top: 0;
+     position: fixed;
+     width: 100%;
+     
+   
+ }
+ 
+ 
+ 
+ 
+ /**------------------Formatação NAV ----------------------*/
+ 
+ nav{
+     padding: 5px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;    
+     background: white;
+ }
+ 
+ 
+ 
+ nav ul{
+     list-style: none;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%; 
+ }
+ 
+ nav ul li{
+    text-align: center;
+    width: 100%;   
+    padding: 5px;
     
  }
-
-#servico_web{
-margin-top: 10%;
-}
-
-section#imagem_logo_dev_mobile img{
+ 
+ 
+ nav ul li a{
+   display: inline-block;
+   padding: 0px;
+   font-family: Poppins;
+   font-size: 14px;  
+   width: 100%;
+   text-decoration: none;
+   color: black;
+   border-bottom: 3px solid transparent;
+   transition: 768ms;
+ }
+ 
+ nav.azul img{
+     width: 73px;    
+     
+ }
+ 
+ nav img{
+     margin-top: 5%;
+     transition: 500ms;
+ }
+ 
+ 
+ 
+ @media screen and (min-width: 768px){
+ 
+     nav{
+         flex-direction: row;
+         justify-content: space-around;
+         background: white;
+     }
+     
+     nav ul {
+         flex-direction: row;
+         width: 70%;
+ 
+     }
+ 
+ }
+ 
+ @keyframes pisca{
+     100%{
+        opacity: 1;
+     }50%{
+         opacity: 0;
+     }
+ }
+ 
+ nav a:hover{
+     border-color: rgb(41, 109, 201);
+ }
+ 
+ /**------------------Formatação Letreiro ----------------------*/
+ 
+ .letreirobemvindo{   
+     margin-top: -35%;
+     text-align: center;
+     font-size: 206px;
+     animation: faderBemVindo 3.3s 0s both;
+     color: white;   
+ }
+ 
+ #text-block-bem-vinddo img{    
+     width: 100%;
+     margin-top: 8%;
+ 
+ }
+ 
+ h1.tiratitulo{    
+     margin-top: -23%;    
+     text-align: center;    
+     color: white;  
+ }
+ 
+ 
+ .letreiroTriplice{  
+     margin-top: -23%;
+     font-size: 206px;
+     text-align: center;     
+     animation: faderTriplice 6s 0s none;
+     color: white;
+     
+ }
+ 
+ @keyframes faderBemVindo{
+     from{
+ opacity: 1;
+     }
+     to{
+ opacity: 0;
+     }
+ }
+ 
+ @keyframes faderTriplice{
+     0%{
+ opacity: 0;
+     }
+     50%{
+ opacity: 0.01;
+     }
+     100%{
+                 opacity: 1;
+             }
+ }
+ 
+ @keyframes faderBemVindoEtriplice{
+     from{
+ opacity: 1;
+     }
+     to{
+ opacity: 0;
+     }
+ }
+ 
+ 
+ 
+ /*------------------Formatação geral Cards ----------------------*/
+ 
+ .cards{ 
+     position: static;   
+     width: 100%;
+     display: inline-block;
+     
+  }
+  .card{
+      
+      border-radius: 10px; 
+        
+  }
+  .card h1{
+     font-size: 27px;
+     color: black;
+ }
+ 
+ .card p{
+     font-size: 17px;
+     color: rgb(57, 64, 82);
+     
+ }
+ 
+ .card button{   
+     display: block;
+     border: 0;     
+     color: blue;   
+     margin: 0 auto;       
+     font-size: 18px;
+     transition: 1000ms;
+     background: transparent; 
+     font-family: Poppins;
+     padding: 5px;
+     
+ }
+ 
+ /*------------------Formatação Geral Button Index ----------------------*/
+ 
+ button:hover{
+     
+     cursor: pointer;
+     font-size: 18px;
+     box-shadow: 3px 10px 40px 2px rgb(57, 64, 82);
+     border-radius: 10px;
+     
+     
+ 
+ 
+ }
+ 
+ /**------------------Formatação Index soluções web ----------------------*/
+ 
+ 
+ .card.card--1{       
+     margin-top: 15%;
+     border-radius: 10px;
+     padding: 10px;
+     float: left;
+     margin-left: 10%;
+     
     
-    margin-left: -9%;
-}
-
-
-
-
+         
+ }
+ 
+ .card.card--1 img{
+     display: block;
+     margin: 0 auto;
+     transition: 768ms;
+ }
+  
+     /**------------------Formatação Index soluções Mobile ----------------------*/
+ 
+  .card.card--2 img{
+     display: block;
+     margin: 0 auto;    
+     transition: 768ms;
+ }
+ .card.card--2{    
+     margin-top: 15%;
+     border-radius: 10px;
+     padding: 10px;
+     float: right;
+     margin-right: 10%;
+ }
+ 
+ 
+  /**------------------Formatação Index manutenção periféricos ----------------------*/
+ 
+ .card.card--3 img{
+      display: block;
+      margin: 0 auto;    
+      transition: 768ms;
+      padding: -27%;;
+ }
+ .card.card--3{    
+     width: 500px;
+     margin-top: 0%;
+     border-radius: 10px;
+     padding: 15px;
+     margin: 0 auto;
+        
+ }
+ 
+ /**------------------Formatação Index footer ----------------------*/
+ 
+ footer{
+    margin-top: 5%;   
+    background: rgb(41, 109, 201); 
+    padding: 25px;   
+ }
+ 
+ footer p{
+         
+     
+     color: white;
+     font-size: 14px;
+     font-family:'Arial Narrow Bold', sans-serif;
+     
+  }
+ 
+ 
+ 
+ 
+ 
+ 
